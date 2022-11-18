@@ -1,0 +1,34 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style type="text/css">
+            .block
+            {
+                position: absolute;
+                left: 50px;
+                width: 130px;
+                height: 30px;
+                margin: 5px;
+            }
+            body {
+                background-color: yellow;
+            }
+        </style>
+        <script src="ReferencetoYourJqueryFile" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="block">
+            <input type="button" name="btnClick" value="Catch me" style="width: 70px;
+                height: 70px;border: 1px sold silver; background-color: red" />
+        </div>
+        <script type="text/javascript">
+            $(".block").mouseover(function () {
+                $(".block").animate({ 
+                        left:(Math.random()*1475),
+                        top:(Math.random()*680),
+                 }, "fast");
+            });
+        </script>
+    </body>
+    </html>
